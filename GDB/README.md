@@ -43,3 +43,15 @@
 
 ### Modify value in a address
 `set {int}0x400210 = 0x5484a2ff`
+
+## IDA
+
+1. Start gdb with gdb server (attach or create the process)
+```
+$ gdbserver localhost:1234 gown
+$ gdbserver localhost:23947 --attach <PID>
+```
+
+2. In IDA, go to Debugger > Start debugger
+
+3. Then Debugger > Start Process
