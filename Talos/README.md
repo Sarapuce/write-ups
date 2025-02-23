@@ -31,3 +31,11 @@ $ talosctl upgrade --image <image-name:tag> -m powercycle -f
 ```
 
 It should stop, just wait a bit and the cluster should be up with the new config
+
+## Upgrade 
+
+Select the new image you want 
+
+Delete all pods using nfs mount point
+
+Execute `talosctl upgrade --nodes 100.101.249.122 --image factory.talos.dev/installer/4a0d65c669d46663f377e7161e50cfd570c401f26fd9e7bda34a0216b6f1922b:v1.9.4`
